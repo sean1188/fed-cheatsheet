@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Quick FED Notes</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="app.css">
+    <script src="script.js"></script>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="title">
+      <h1>HTML DOM and CSS Notes</h1>
+      <h4> <code>{}</code> Sean Lim 2017</h4>
+      <caption>
+        Inspect Element to use as a cheatsheet.
+        <code> #mykindofxtra</code>
+      </caption>
+    </div>
+    <!-- BASICS -->
+    <h1><code>*</code> Basic Elements</h1>
+    <div class="content-wrapper">
+      <!-- header tags -->
+     <h1>This is a h1 tag</h1>
+     <h2>This is a h2 tag</h2>
+     <h3>This is a h3 tag</h3>
+     <h4>This is a h4 tag</h4>
+     <h5>and so on...</h5>
+     <h6>(up to h6)</h6>
+
+     <!-- Paragraph tag  -->
+     <p> A P tag is for paragraph text</p>
+
+     <!-- bold, italics, hyperlinks -->
+     <b>bold text with the b tag</b> <br>
+     <i>italics are cool</i> <br>
+     <a href="https://www.google.com" target="_blank">send someone to a page with the a tag</a> <br>
+     <a href="https://www.google.com" target="_blank"> 
+     <img draggable="false" src="media/test.jpg" srcset="media/test.jpg 1x, media/test.jpg 2x" alt="Images with img tag">
+    </a><br>
+    <address>Use the <code>srcset</code> attribute to load responsive images</address>
+     <video src="https://www.w3schools.com/tags/movie.ogg" controls></video>
+    <!-- Video that autoplays with the autoplay tag
+     <video src="https://www.w3schools.com/tags/movie.ogg" controls></video> -->
+    </div>
+
+    <!-- POINTLESS BUT REQUIRED STUFF -->
+    <h1><code>*</code> Some more useless stuff</h1>
+    <div class="content-wrapper">
+      <!-- Lists -->
+      <h2>Use the ul tag to define a list </h2>
+      <ul>
+        <li>each item is an li element</li>
+        <li>each item is an li element</li>
+        <li>each item is an li element</li>
+        <li>each item is an li element</li>
+      </ul>
+      <h2>Use the ol tag to define an ordered list </h2>
+      <ol>
+        <li>each item is an li element</li>
+        <li>each item is an li element</li>
+        <li>each item is an li element</li>
+        <li>each item is an li element</li>
+      </ol>
+      <h2>The <code>start</code> attribute to determine the start index</h2>
+      <ol start="999">
+        <li>each item is an li element</li>
+        <li>each item is an li element</li>
+        <li>each item is an li element</li>
+        <li>each item is an li element</li>
+      </ol>
+
+      <!-- Dropdowns -->
+      <h2>Dropdowns</h2>
+      <details>
+        <summary>Reveal</summary>
+          content with the detail tag
+          <address>use the <code>summary</code> tag to set the header</address>
+      </details>
+
+      <!-- IFrame -->
+      <h2>iFrames</h2>
+      <p>For webpage in a webpage lmao </p>
+      <iframe src="https://sean1188.github.io/raw-sauce" width="80%" height="300px"></iframe>
+
+      <!-- Image Maps -->
+      <h2>Image Maps</h2>
+      <p>Image with clickable areas with the <code>usemap</code> attribute</p>
+      <img src="media/test.jpg" alt="An image" usemap="#imagemap">
+      <map name="imagemap">
+        <area shape="rect" coords="0,0,50,50" onclick="alert('clicked area 1!')" alt="1">
+        <area shape="rect" coords="0,50,50,50" onclick="alert('clicked area 2!')" alt="2">
+        <area shape="rect" coords="0,100,50,50" onclick="alert('clicked area 3!')" alt="3">
+      </map>
+    </div>
+
+    <!-- TABLES -->
+    <h1><code>*</code> Tables</h1>
+    <div class="content-wrapper">
+      <table>
+        <caption>This is a table</caption>
+        <thead>
+          <!-- Each <tr> lays out horizontally -->
+          <tr>
+            <th>Header</th>
+            <th>Header</th>
+            <th>Header</th>
+            <th>Header</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>data</td>   
+            <td>data</td> 
+            <!-- spanning by col means you would need to modify elements
+            on the same tr    -->
+            <td colspan="2">data which spans 2 cols</td>   
+         </tr> 
+          <tr>
+            <td>data</td>   
+            <!-- spanning by row means you would need to modify elements
+            in the next tr -->
+            <td rowspan="2">data which spans 2 rows</td>   
+            <td>data</td>   
+            <td>data</td>   
+         </tr> 
+          <tr>
+            <td>data</td>   
+            <td>data</td>   
+            <td>data</td>   
+         </tr> 
+        </tbody>
+      </table>
+      <p>
+        Use CSS <code>th</code>, <code>td</code> and <code>table</code> to style the table, cell span can be adjusted with 
+        <code>rowspan</code> and <code>colspan</code>
+      </p>
+    </div>
+    <!-- FORMS -->
+    <h1><code>*</code> Forms</h1>
+    <div class="content-wrapper">
+      <form name="formName" onchange="updateForm">
+        <h2>Form header</h2>
+        <!-- Text -->
+        <label for="Field1">Text Input:</label><input placeholder= "cool placeholder" name="Field1" type="text" required> <br>
+        <!-- Dropdown Menu -->
+        <label for="dropdown">Dropdown menu :</label>
+          <select name="dropdown1">
+            <option value="-1" disabled seleced>Choose anything...</option>
+          </select>
+         <br>
+        <label for="dropdown">Multiselect Dropdown menu :</label>
+          <select name="dropdown2" multiple>
+            <option value="0" selected>Choose many things</option>
+            <option value="0" selected>Choose many things</option>
+
+          </select>
+         <br>
+         <!-- Radio Menu + Fieldsets -->
+         <label for="Field3 "></label>
+          <fieldset name="fieldset">
+            <legend>A fieldset groups elements in a form</legend>
+            <input type="radio" name="radioOption" value="0" required> First
+            <input type="radio" name="radioOption" value="1"> Second
+            <input type="radio" name="radioOption" value="2"> Third
+          </fieldset>
+
+          <!-- Address -->
+          <label for="add">Address Input using <code>textarea</code>:</label><textarea placeholder= "cool placeholder" name="add" type="address" required></textarea> <br>
+          <!-- Email -->
+          <label for="add">Email input:</label><input placeholder= "use the email type attribute" name="add" type="email" required></input> <br>
+          <!-- Regex -->
+          <label>Input with regex and restrictions:</label>
+          <input type="text" placeholder="Phone Number" pattern="[689]\d{7}" required><br>
+          <!-- Date time -->
+          <label> Date and time inputs</label>
+          <input type="date" min="2017-12-1" max="2017-12-30">
+          <!-- Step attribute is in seconds -->
+          <input type="time" value="10:00" min="10:00" max="22:00" step="60" required> 
+          <br>
+          <!-- Checkbox -->
+          <input type="checkbox" name="checkbox"> A checkbox </input>
+          <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      </form>
+    </div>
+
+  </body>
+</html>

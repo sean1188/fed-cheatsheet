@@ -1,0 +1,106 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.title {
+  text-align: left;
+  width: 25%; 
+  margin: 50px;
+}
+
+.title > h1 {
+  font-size: 60px;
+  transition-duration: 0.3s;
+}
+
+.title h1:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.1, 1.1) rotate(-2deg);
+}
+
+thead {
+  background-color: lightgray;
+}
+
+tbody {
+  background-color:  white;
+}
+
+.content-wrapper {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  padding: 50px;
+  padding-top: 25px;
+  display: block;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  transition-duration: 0.3s;
+}
+
+.content-wrapper:hover {
+  transform: scale(1.01, 1.01);
+}
+
+body > h1 {
+  margin: auto;
+  margin-bottom:  50px;
+  margin-top: 50px;
+  width: 90%;
+  text-align: left;
+  transition-duration: 0.2s;
+}
+
+body > h1:hover{
+  transform: translate(20px, 0);
+}
+
+.content-wrapper img {
+  width: 20%;
+  margin: auto;
+  display: inline-block;
+}
+
+.content-wrapper > table, td, th {
+  border: solid black 1px;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+td, th {
+  height: 50px;
+}
+
+.content-wrapper > table {
+  width: 100%;
+}
+
+.content-wrapper > table > caption {
+  font-size: 30px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-wrapper > form {
+  width: 100%;
+}
+
+label {
+  margin: 10px;
+  margin-left: 0px;
+  width: 150px;
+  display: inline-block;
+}
+
+input {
+  margin: 10px;
+}
+
+code {
+  color: salmon;
+}
+
+
+
+/*# sourceMappingURL=app.css.map*/
