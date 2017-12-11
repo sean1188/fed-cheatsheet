@@ -21,7 +21,7 @@ window.onload = () => {
     optionOb.value = content.indexOf(option);
     optionOb.innerHTML = option;
     form.dropdown1.add(optionOb);
-    }
+  }
 }
 
 // Called when form is updated
